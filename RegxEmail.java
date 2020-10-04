@@ -11,8 +11,8 @@ public class RegxEmail
 	    System.out.println("Enter pincode");
 	    String n=c.nextLine();
 	    System.out.println("String is"+n);
-		System.out.println(Pattern.matches("^[_A-Za-z0-9-\\+]+@"
-				+"[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)$",n));
+		System.out.println(Pattern.matches("^[_A-Za-z0-9-+&*-a]+(\\.[_A-Za-z0-9-]+)*@"
+				+"[A-Za-z0-9-+&*-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$",n));
 		c.close();
 	}   
 }
